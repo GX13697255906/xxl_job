@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: xxl-job-data
+  datasource:
+    url: jdbc:mysql://139.199.84.234:3306/taobao?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root1
+    password: root1
+mybatis-plus:
+  typeAliasesPackage: com.gx.data.server.entity
+  mapper-locations: classpath*:mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
